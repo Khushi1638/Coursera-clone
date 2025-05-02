@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coursera Clone</title>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="sticky-header">
+      <div class="course-for-container">
+        <!-- not included in the responsiveness part -->
+        <ul>
+          <li><span>For</span> Individuals</li>
+          <li><span>For</span> Businesses</li>
+          <li><span>For</span> Universities</li>
+          <li><span>For</span> Goverments</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a href="/" aria-label="Coursera Home">
+        <img
+          src="./assets/coursera-logos/coursera-logo-full-rgb.png"
+          alt="Coursera logo"
+          class="coursera-logo"
+          loading="lazy"
+        />
+      </a>
+      <button
+        class="explore-btn"
+        aria-expanded="false"
+        aria-controls="explore-menu"
+      >
+        Explore <i class="fa-solid fa-angle-down angle-down"></i>
+      </button>
+      <!-- takning iput for searching -->
+      <form class="search-form" role="search">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            placeholder="What do you want to learn?"
+            class="search-input"
+            aria-label="Search Courses"
+          />
+          <!-- search icon -->
+          <div class="search-icon-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+        </div>
+      </form>
+      <ul class="nav-list">
+        <li><a href="#" class="nav-list-item">Design</a></li>
+        <li><a href="#" class="nav-list-item">Careers</a></li>
+        <li>
+          <button class="nav-list-btn" aria-label="Select language">
+            <i class="fa-solid fa-globe"></i> English
+            <i class="fa-solid fa-angle-down angle-down"></i>
+          </button>
+        </li>
+        <li>
+          <button class="nav-list-btn" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </li>
+        <li>
+          <button class="nav-list-btn user-btn" aria-label="User profile">
+            <div class="user">K</div>
+            <i class="fa-solid fa-angle-down angle-down"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="hero-section-info">
+          <img
+            src="./assets/coursera-logos/coursera-logo-full-rgb.png"
+            alt="Coursera logo"
+            class="coursera-logo"
+            loading="lazy"
+          />
+          <h1>Achieve your career goals with Coursera Plus</h1>
+          <p>
+            Subscribe to build job-ready skills from world-class institutions.
+          </p>
+          <p>₹5,148/month, cancel anytime</p>
+          <button class="btn">Start 7-day Free Trial</button>
+          <p class="link">
+            <a href="#" class="link"
+              >or $34,817/year with 14-day maoney-back guarantee</a
+            >
+          </p>
+        </div>
+        <div class="hero-section-img-container">
+          <img
+            src="./assets/redesigned-hero-image.png"
+            alt="hero section image"
+            class="hero-section-img"
+          />
+        </div>
+      </section>
+
+      <!-- universities section -->
+      <section class="university-section">
+        <div class="universities-heading">
+          <h2>Learn from 350+ top universities and companies</h2>
+        </div>
+        <div class="universities-img">
+          <img src="./assets/illinois.png" alt="Illions university" loading="lazy"/>
+          <img src="./assets/duke.png" alt="duke university" loading="lazy"/>
+          <img src="./assets/google.png" alt="google img" loading="lazy"/>
+          <img src="./assets/michigan.png" alt="michigan university" loading="lazy"/>
+          <img src="./assets/ibm.png" alt="ibm icon" loading="lazy"/>
+          <img src="./assets/vanderbilt.png" alt="vanderbilt university" loading="lazy"/>
+          <img
+            src="./assets/john-hopkins.png"
+            alt="john hopkin university icon"
+          loading="lazy"/>
+        </div>
+      </section>
+
+      <!-- investing carrer options -->
+      <section class="invest-carrer-container">
+        <div class="invest-carrer-container-heading">
+          <h2>Invest in you carrer</h2>
+        </div>
+        <div class="invest-info">
+          <div class="invest-info-contianer">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Explore new skills</h3>
+            <p>Access 10,000+ courses in AI, business, technology, and more.</p>
+          </div>
+          <div class="invest-info-contianer">
+            <i class="fa-solid fa-award"></i>
+            <h3>Earn valuable credentials</h3>
+            <p>
+              Get certificates for every course you finish and boost your
+              chances of getting hired after your trial ends at no additional
+              cost.
+            </p>
+          </div>
+          <div class="invest-info-contianer">
+            <i class="fa-regular fa-star"></i>
+            <h3>Learn from the best</h3>
+            <p>
+              Take your skills to the next level with expert-led courses and
+              Coursera Coach, your AI-powered guide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- proof section  -->
+      <section class="proof-container">
+        <div class="proof-container-heading">
+          <h2>
+            77% of learners report career benefits, like landing a new job,
+            earning a promotion, gaining applicable skills, and more.¹
+          </h2>
+          <button class="explore-btn">Start 7-day Free Trial</button>
+        </div>
+        <div class="proof-container-img">
+          <img src="./assets/image2.png" alt="" />
+        </div>
+      </section>
+
+      <!-- carrer options cards -->
+      <section class="carrer-options-cards">
+        <div class="carrer-option-heading">
+          <h2>Carrer skills that work</h2>
+          <button class="explore-btn">Start 7-day Free Trial</button>
+        </div>
+        <div>
+          <!-- cards container -->
+          <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card google">
+              <div class="card-img-container">
+                <img src="./assets/card-img1.png" alt="card image" />
+              </div>
+              <div class="card-icon-container">
+                <img src="./assets/google-icon-img.jpeg" alt="google icon" />
+                <p>Google</p>
+              </div>
+              <div class="card-heading">
+                <h3>Google Prompting Essentials</h3>
+              </div>
+              <div>
+                <p class="card-course">Beginner Course</p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+              <div class="card-img-container">
+                <img src="./assets/card-img2.png" alt="card image" />
+              </div>
+              <div class="card-icon-container">
+                <img
+                  src="./assets/michigan-university-logo.png"
+                  alt="google icon"
+                />
+                <p>University of Michigan</p>
+              </div>
+              <div class="card-heading">
+                <h3>Python for Everybody</h3>
+              </div>
+              <p class="card-course">
+                <span class="card-span">Build toward a degree</span>Beginner
+                Specialization
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+              <div class="card-img-container">
+                <img src="./assets/card-img3.png" alt="card image" />
+              </div>
+              <div class="card-icon-container">
+                <img src="./assets/Vu-university-logo.png" alt="google icon" />
+                <p>Vanderbilt University</p>
+              </div>
+              <div class="card-heading">
+                <h3>Prompt Engineering</h3>
+              </div>
+              <p class="card-course">Beginner Specialization</p>
+            </div>
+          </div>
+          <button class="explore-btn">Show 8 more</button>
+        </div>
+      </section>
+      
+      <!-- searching program section -->
+      <section class="search-programs-container">
+        <h2>Search 10,000+ learning programs</h2>
+        <form class="program-search-form">
+          <div class="input-wrapper">
+            <div class="left-search-icon">
+              <i class="fa-solid fa-magnifying-glass left-search-icon"></i>
+            </div>
+            <input type="text" placeholder="e.g. Machine Learning" />
+            <div class="search-btn">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+          </div>
+        </form>
+        <div class="search-programs-btn">
+          <button>Popular</button>
+          <button>Business</button>
+          <button>Computer Science</button>
+          <button>Data Science</button>
+          <button>Health</button>
+          <button>Information Technology</button>
+          <button>Arts and Humanities</button>
+        </div>
+      </section>
+
+      <!-- Subscriber feedback section -->
+      <section class="subscriber-feedback">
+        <h2>What subscribers are achieving through learning</h2>
+        <div class="subscriber-feedback-cards">
+          <div class="subscriber-feedback-card">
+            <div class="subscriber-img-name">
+              <div class="subscriber-img">
+                <img
+                  src="./assets/subscriber-img1.jpeg"
+                  alt="subcriber image"
+                />
+              </div>
+              <p>Abigail P</p>
+            </div>
+            <p>
+              "I have a full-time job and 3 kids. I needed the flexibility
+              offered by Coursera Plus in order to achieve my goals. My Coursera
+              Plus subscription motivated me to keep learning"
+            </p>
+          </div>
+          <div class="subscriber-feedback-card display-none-card">
+            <div class="subscriber-img-name">
+              <div class="subscriber-img">
+                <img
+                  src="./assets/subscriber-img2.jpeg"
+                  alt="subcriber image"
+                />
+              </div>
+              <p>Shi Jie F.</p>
+            </div>
+            <p>
+              "Coursera Plus keeps me motivated to learn. With each course, I’m
+              getting more value out of my subscription. I can access almost
+              anything with Coursera Plus!"
+            </p>
+          </div>
+          <div class="subscriber-feedback-card display-none-card">
+            <div class="subscriber-img-name">
+              <div class="subscriber-img">
+                <img src="./assets/subscriber-img3.png" alt="subcriber image" />
+              </div>
+              <p>Inés K.</p>
+            </div>
+            <p>
+              "I really appreciate the flexibility I get with Coursera Plus. I
+              can try any course and switch to another one for no additional
+              cost. This motivates me to learn even more!"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- plan info container -->
+      <section class="plan-info-container">
+        <h2>Plans for you or your team</h2>
+        <div class="plan-info-btn">
+          <button class="active-btn">For Individuals</button>
+          <button class="not-active-btn">For Teams</button>
+        </div>
+        <div class="plan-info-cards">
+          <div class="plan-info-card short-card">
+            <div class="plan-card-info">
+              <h3>Single learning program</h3>
+              <p>Learn a single topic or skill and earn a credential</p>
+              <span class="price-info"
+                >₹4,275 – ₹6,893 <span>/month</span></span
+              >
+              <p>
+                Visit an Individual course or Specialization page to purchase
+              </p>
+            </div>
+            <ul class="plan-card-info-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>Access all courses within the learning program</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>Earn a certificate upon completion after your trial ends</p>
+              </li>
+            </ul>
+          </div>
+          <div class="plan-info-card popular-card">
+            <p class="popular-label">Most popular</p>
+            <div class="plan-card-info">
+              <h3>Coursera Plus Monthly</h3>
+              <p>
+                Complete multiple courses and earn credentials in the short term
+              </p>
+              <span class="price-info">₹5,148 <span>/month</span></span>
+              <button class="btn">Start 7-day free trial</button>
+              <p>Cancel anytime</p>
+            </div>
+            <ul class="plan-card-info-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  Access 10,000+ courses and Specializations from 170+ leading
+                  companies and universities
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>Earn unlimited certificates after your trial ends</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  Learn job-relevant skills and tools with 1,000+ applied
+                  projects and hands-on labs from industry experts
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  Choose from more than 15 Professional Certificate programs
+                  from industry leaders like Google, Facebook, and more
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="plan-info-card short-card">
+            <div class="plan-card-info">
+              <h3>Coursera Plus Annual</h3>
+              <p>
+                Combine flexibility and savings with long-term learning goals
+              </p>
+              <span class="price-info">₹34,817 <span>/year</span></span>
+              <button class="annual-btn">Try Coursera Plus Annual</button>
+              <p>14-day money-back guarantee</p>
+            </div>
+            <ul class="plan-card-info-list">
+              <li>Everything included in the monthly plan, plus:</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>Save when you pay up front for the year</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  Enjoy maximum flexibility to achieve work/life balance and
+                  learn at your own pace
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Coursera</h4>
+          <a href="#">About</a>
+          <a href="#">What We Offer</a>
+          <a href="#">Leadership</a>
+          <a href="#">Carrers</a>
+          <a href="#">Catalog</a>
+          <a href="#">Coursera Plus</a>
+          <a href="#">Degrees</a>
+        </div>
+        <div class="footer-section">
+          <h4>Community</h4>
+          <a href="#">Learners</a>
+          <a href="#">Partners</a>
+          <a href="#">Beta Testers</a>
+          <a href="#">Blog</a>
+          <a href="#">The Coursera Podcast</a>
+          <a href="#">Tech Blog</a>
+          <a href="#">Teaching Center</a>
+        </div>
+        <div class="footer-section">
+          <h4>More</h4>
+          <a href="#">Press</a>
+          <a href="#">Investers</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Help</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact</a>
+          <a href="#">Articl</a>
+          <a href="#">Directory</a>
+          <a href="#">Affiliates</a>
+          <a href="#">Modern Slavery Statement</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Coursera Clone. All rights reserved.</p>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+      </div>
+     </footer>
+  </body>
+</html>
