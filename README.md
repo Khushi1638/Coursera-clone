@@ -35,6 +35,10 @@ git clone <repo-url>
 
 2. Open the `index.html` file in your browser.
 
+## Live Demo
+
+You can view the deployed page here: [Coursera Clone Live Demo](https://khushi1638.github.io/Coursera-clone/)
+
 ## Author
 
 Khushi Nagaliya
@@ -42,4 +46,3 @@ Khushi Nagaliya
 ---
 
 Feel free to give feedback or suggestions to improve this project!
-
